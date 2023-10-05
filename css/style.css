@@ -180,8 +180,8 @@ a:hover {
 }
 
 #HSlogo {
-	width: 121px;
-	height: 134px;
+	width: 75px;
+	height: 85px;
 	display: block;
 	cursor: pointer;
 	margin: 0 auto -82px;
@@ -189,6 +189,7 @@ a:hover {
 	position: relative;
 	z-index: 3;
 }
+
 
 
 /* Navigation
