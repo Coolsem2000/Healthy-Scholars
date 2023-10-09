@@ -106,6 +106,69 @@ $(document).ready(function() {
 		html_class = html_class + ' safari';
 	 
 	$("html").addClass(html_class);
+
+	
+//scrolling effect
+$(document).ready(function() {
+    $('a[href^="#"]').on('click', function(event) {
+        event.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 2000, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+
+    // Smooth scroll for specific links
+    $('a[href="#academic"]').on('click', function(event) {
+        event.preventDefault();
+
+        var target = $('#academic');
+        $('html, body').stop().animate({
+            'scrollTop': target.offset().top
+        }, 2000, 'swing', function () {
+            window.location.hash = '#academic';
+        });
+    });
+
+    $('a[href="#field_trip"]').on('click', function(event) {
+        event.preventDefault();
+
+        var target = $('#field_trip');
+        $('html, body').stop().animate({
+            'scrollTop': target.offset().top
+        }, 2000, 'swing', function () {
+            window.location.hash = '#field_trip';
+        });
+    });
+
+    $('a[href="#events"]').on('click', function(event) {
+        event.preventDefault();
+
+        var target = $('#events');
+        $('html, body').stop().animate({
+            'scrollTop': target.offset().top
+        }, 2000, 'swing', function () {
+            window.location.hash = '#events';
+        });
+    });
+
+    // Scroll up button
+    $('#scrollUp').on('click', function(event) {
+        event.preventDefault();
+
+        $('html, body').stop().animate({
+            'scrollTop': 0
+        }, 2000, 'swing');
+    });
+});
+
+
+	
 	 
 });
 
