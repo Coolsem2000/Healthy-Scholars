@@ -2151,3 +2151,25 @@ a.btn.blue,
         max-width: calc(35% - 20px); /* Reset max-width for wider screens */
     }
 }
+
+/* scroll up button*/
+#scrollUp {
+    background-color: #007BFF; /* Blue background color */
+    color: #ffffff; /* White text color */
+	float: right;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: breathe 2s infinite alternate; /* Breathing animation */
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    100% {
+        transform: scale(1.1); /* Slightly larger scale */
+    }
+}
