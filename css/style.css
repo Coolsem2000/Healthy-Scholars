@@ -180,16 +180,16 @@ a:hover {
 }
 
 #HSlogo {
-	width: 75px;
-	height: 85px;
+	width: 7%;
+	height: auto;
 	display: block;
+	float: left;
 	cursor: pointer;
-	margin: 0 auto -82px;
+	margin: 1 auto -82px;
 	text-indent: -9999em;
 	position: relative;
 	z-index: 3;
 }
-
 
 
 /* Navigation
@@ -658,6 +658,7 @@ h1.single{
 	line-height: 84px;
 	padding-bottom: 110px;
 	text-align: left;
+	text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 
 }
 
@@ -2067,12 +2068,13 @@ a.btn.blue,
 	flex: 1;
 	max-width: 50%;
 	margin: 0 10px;
+	background-color: lightcyan;
 }
 .program-image {
-	width: 100%;
+	width: 50%;
 	display: block;
 	margin: 0 auto;
-	border-radius: 20%;
+	border-radius: 10%;
 }
 .program-name {
 	text-align: center;
@@ -2098,7 +2100,7 @@ a.btn.blue,
 }
 
 .image-container img {
-	max-width: 20%;
+	max-width: 50%;
 	height: auto;
 	object-fit: contain;
 	border-radius: 35%;
@@ -2122,4 +2124,30 @@ a.btn.blue,
 	padding: 1%;
 	border-radius: 8px;
 	opacity: 85%;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+    max-width: calc(50% - 20px); /* Set max-width for mobile view to 50% */
+    box-sizing: border-box;
+}
+
+.flex-item img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    /* Apply different styles for screens wider than 768 pixels */
+    .flex-item {
+        max-width: calc(35% - 20px); /* Reset max-width for wider screens */
+    }
 }
