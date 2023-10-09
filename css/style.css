@@ -2156,13 +2156,36 @@ a.btn.blue,
 #scrollUp {
     background-color: #007BFF; /* Blue background color */
     color: #ffffff; /* White text color */
-	float: right;
+	text-align: center;
     border: none;
-    padding: 10px 20px;
+    padding: 6px 12px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     animation: breathe 2s infinite alternate; /* Breathing animation */
+}
+
+.BtnA {
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 8px 18px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.Btn:hover {
+	background-color: #040113e1; /* Blue background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 8px 18px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 @keyframes breathe {
